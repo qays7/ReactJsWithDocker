@@ -1,0 +1,12 @@
+version: '1.0'
+stages:
+  - build
+steps:
+  MyAppDockerImage:
+    title: Building React Image
+    type: build
+    stage: build
+    image_name: react-docker-app
+    working_directory: ./
+    tag: '1.0'
+    dockerfile: Dockerfile
